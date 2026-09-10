@@ -2,14 +2,14 @@ public class Patient {
 
     // fields for node class (Patient class is a Node)
 
-    String patientName;
-    Patient next;
-    Patient prev;
+    private String patientName;
+    private Patient next;
+    private Patient prev;
 
     // metrics , {Patient ID number , severity for priority queue, and patient arrival time}
-    int severity;
-    int arrivalTime;
-    int patientID;
+    private int severity;
+    private int arrivalTime;
+    private int patientID;
 
 
     public Patient(String name, int ID) {

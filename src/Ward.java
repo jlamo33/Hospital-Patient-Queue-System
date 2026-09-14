@@ -144,7 +144,14 @@ public class Ward {
 
     public void sortPatientsBySeverity() {
 
+        Patient temp = head;
+        Patient tempNext = temp.getNext();
+        for(int i = 0; i < countPatients(); i++) {
 
+            if(temp.getSeverity() > tempNext.getSeverity()) {
+                temp.setNextPatient(tempNext.getNext());
+            }
+        }
     }
 
     public void insertBySeverity(String patientName, int ID, int severity) {

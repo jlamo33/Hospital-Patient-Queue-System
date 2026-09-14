@@ -12,10 +12,11 @@ public class Patient {
     private int patientID;
 
 
-    public Patient(String name, int ID) {
+    public Patient(String name, int ID, int severity) {
 
         patientName = name;
         patientID = ID;
+        this.severity = severity;
     }
 
     public String getPatientName() {
@@ -26,6 +27,11 @@ public class Patient {
     public int getPatientID() {
 
         return patientID;
+    }
+
+    public int getSeverity() {
+
+        return severity;
     }
 
     public Patient getNext() {
